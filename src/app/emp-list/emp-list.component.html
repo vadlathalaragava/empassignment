@@ -1,0 +1,32 @@
+<div class="ui container">  
+<div class="ui grid"> 
+    <div class="ui  dark transparent eight wide centered rounded column">
+        <div class="ui grid">
+            <div class="ui column">
+
+                <table class="ui red table">
+                    <thead>
+                      <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Phone</th>
+                        <th>Email</th>
+                        <th>Location</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor='let s of student'>
+                        <td>{{s.id}}</td>
+                        <td>{{s.name}}</td>
+                        <td>{{s.phone}}</td>
+                        <td>{{s.email}}</td>
+                        <td>{{s.address}}</td>
+                      </tr> 
+                    </tbody>
+                  </table>
+                
+            </div>
+        </div>
+    </div>
+</div>
+</div>
